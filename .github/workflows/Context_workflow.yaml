@@ -1,4 +1,4 @@
-name: 08-01-Contexts - github
+name: 08-01-Contexts - github-test
 
 on:
   workflow_dispatch:
