@@ -11,7 +11,7 @@ on:
       Current_version:
         type: string
       upload:
-        type: booleans
+        type: boolean
 
 jobs:
   build:
