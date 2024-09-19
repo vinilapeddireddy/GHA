@@ -6,6 +6,10 @@ on:
     inputs:
       Jiracard:
         type: string
+      ReleaseVersion:
+        type: string
+      Current_version:
+        type: string
 
 jobs:
   build:
@@ -14,3 +18,7 @@ jobs:
       - name: Use Workflow Input
         run: |
           echo "DEBU ${{ inputs.Jiracard }}"
+           echo "ReleaseVersion ${{ inputs.ReleaseVersion }}"
+           echo "Current_version ${{ inputs.Current_version }}"
+
+
