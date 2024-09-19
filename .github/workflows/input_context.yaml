@@ -11,7 +11,7 @@ on:
       Current_version:
         type: string
       upload:
-        type: boolean
+        type: booleans
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
           echo "DEBU ${{ inputs.Jiracard }}"
            echo "ReleaseVersion ${{ inputs.ReleaseVersion }}"
         
-            if [[ ${{ inputs.upload }} == true]]; then
+            if [[ ${{ inputs.upload }} == true]] then
                     
                     echo "version tag is $${{ inputs.upload }}"
             else
