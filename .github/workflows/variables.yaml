@@ -1,11 +1,11 @@
 name : context_varaibles
 on:
    workflow_dispatch:    
-  jobs:
+jobs:
     build:
       runs-on: ubuntu-latest
       steps:
         - name: Use Workflow variable from git
           run: |
-            echo "print  ${{ var.config }}"
+            echo "print  ${{ vars.CONFIG }}"
           
