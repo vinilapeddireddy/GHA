@@ -15,7 +15,7 @@ jobs:
 
       # Step 2: Setup Java & Maven dependencies
       - name: Setup Java & Maven dependencies
-        uses: .github/actions/anzsetup-java
+        uses: ./.github/actions/anzsetup-java
         with:
           java-version: 11
           working-dir: ${{ env.working-directory }}  # Use specified working directory
